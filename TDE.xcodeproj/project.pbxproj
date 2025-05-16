@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		DCB311992DD7C7AB00738C08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC70D68E2DC178DA006D8C0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC70D6952DC178DA006D8C0A;
+			remoteInfo = TDE;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		DC70D6962DC178DA006D8C0A /* TDE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB311952DD7C7AB00738C08 /* TDETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +40,22 @@
 			path = TDE;
 			sourceTree = "<group>";
 		};
+		DCB311962DD7C7AB00738C08 /* TDETests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TDETests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DC70D6932DC178DA006D8C0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB311922DD7C7AB00738C08 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				DC70D6982DC178DA006D8C0A /* TDE */,
+				DCB311962DD7C7AB00738C08 /* TDETests */,
 				DC70D6972DC178DA006D8C0A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				DC70D6962DC178DA006D8C0A /* TDE.app */,
+				DCB311952DD7C7AB00738C08 /* TDETests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +108,29 @@
 			productReference = DC70D6962DC178DA006D8C0A /* TDE.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DCB311942DD7C7AB00738C08 /* TDETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB3119D2DD7C7AB00738C08 /* Build configuration list for PBXNativeTarget "TDETests" */;
+			buildPhases = (
+				DCB311912DD7C7AB00738C08 /* Sources */,
+				DCB311922DD7C7AB00738C08 /* Frameworks */,
+				DCB311932DD7C7AB00738C08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCB3119A2DD7C7AB00738C08 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DCB311962DD7C7AB00738C08 /* TDETests */,
+			);
+			name = TDETests;
+			packageProductDependencies = (
+			);
+			productName = TDETests;
+			productReference = DCB311952DD7C7AB00738C08 /* TDETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +143,10 @@
 				TargetAttributes = {
 					DC70D6952DC178DA006D8C0A = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					DCB311942DD7C7AB00738C08 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = DC70D6952DC178DA006D8C0A;
 					};
 				};
 			};
@@ -113,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				DC70D6952DC178DA006D8C0A /* TDE */,
+				DCB311942DD7C7AB00738C08 /* TDETests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DC70D6942DC178DA006D8C0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB311932DD7C7AB00738C08 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCB311912DD7C7AB00738C08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCB3119A2DD7C7AB00738C08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC70D6952DC178DA006D8C0A /* TDE */;
+			targetProxy = DCB311992DD7C7AB00738C08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DC70D6AA2DC178DB006D8C0A /* Debug */ = {
@@ -307,6 +382,40 @@
 			};
 			name = Release;
 		};
+		DCB3119B2DD7C7AB00738C08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = puc.TDETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDE.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TDE";
+			};
+			name = Debug;
+		};
+		DCB3119C2DD7C7AB00738C08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = puc.TDETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDE.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TDE";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -324,6 +433,15 @@
 			buildConfigurations = (
 				DC70D6AA2DC178DB006D8C0A /* Debug */,
 				DC70D6AB2DC178DB006D8C0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB3119D2DD7C7AB00738C08 /* Build configuration list for PBXNativeTarget "TDETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB3119B2DD7C7AB00738C08 /* Debug */,
+				DCB3119C2DD7C7AB00738C08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

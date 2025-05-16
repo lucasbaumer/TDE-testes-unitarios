@@ -85,10 +85,16 @@ class MainViewController: UIViewController {
     }
 
     @objc private func calculateSum() {
-        let num1 = Int(number1Field.text ?? "") ?? 0
-        let num2 = Int(number2Field.text ?? "") ?? 0
-        let result = num1 + num2
-        resultLabel.text = "Resultado: \(result)"
-        resultLabel.accessibilityValue = "\(result)"
+        let calculadora = Calculadora()
+        let num1 = Int(number1Field.text ?? "")
+        let num2 = Int(number2Field.text ?? "")
+        if let resultado = calculadora.somar(num1, num2) {
+            resultLabel.text = "Resultado: \(resultado)"
+            resultLabel.accessibilityValue = "\(resultado)"
+        } else {
+            resultLabel.text = "Erro na entrada"
+            resultLabel.accessibilityValue = "Erro na entrada"
+        }
     }
+
 }
